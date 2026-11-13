@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", var(--font-sans);
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-brand-blue-50: #f0f5fa;
+  --color-brand-blue-100: #e1edf5;
+  --color-brand-blue-500: #1e6091;
+  --color-brand-blue-600: #1a4f76;
+  --color-brand-blue-900: #0d2137;
+  --color-brand-blue-950: #050d18;
+  
+  --animate-fade-in: fade-in 0.6s ease-out forwards;
+  --animate-slide-up: slide-up 0.5s ease-out forwards;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050d18;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e6091;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2a82c5;
+}
+
+/* Fondo azul con cuadros grises para sección de cámaras */
+.bg-grid-blue {
+  background-color: #0d2137; /* Azul tecnológico de la marca */
+  background-image: 
+    linear-gradient(to right, rgba(156, 163, 175, 0.15) 1.5px, transparent 1.5px),
+    linear-gradient(to bottom, rgba(156, 163, 175, 0.15) 1.5px, transparent 1.5px);
+  background-size: 36px 36px;
+}
+
+/* Animaciones para demostración de fluidez de video 4K (15 FPS vs 60 FPS) */
+@keyframes target-glide {
+  0% {
+    transform: translate(20px, 30px);
+  }
+  25% {
+    transform: translate(280px, 50px);
+  }
+  50% {
+    transform: translate(160px, 160px);
+  }
+  75% {
+    transform: translate(40px, 110px);
+  }
+  100% {
+    transform: translate(20px, 30px);
+  }
+}
+
+.animate-glide-smooth {
+  animation: target-glide 12s infinite steps(60);
+}
+
+.animate-glide-choppy {
+  animation: target-glide 12s infinite steps(15);
+}
+
+.animate-glide-hyper {
+  animation: target-glide 12s infinite linear;
+}
+
+

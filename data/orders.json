@@ -1,0 +1,24 @@
+[
+  {
+    "id": "ORD-141667-395",
+    "customerName": "Carlos Mendoza",
+    "customerEmail": "carlos@ejemplo.com",
+    "customerPhone": "+56 9 9876 5432",
+    "shippingAddress": "Av. Libertador 450, Santiago",
+    "items": [
+      {
+        "id": "ultra-4k-bullet",
+        "name": "SecureCam Ultra 4K Bullet",
+        "price": 289,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 578,
+    "total": 578,
+    "status": "completado",
+    "paymentMethod": "Transferencia Bancaria Inmediata",
+    "notes": "Dejar en recepción",
+    "createdAt": "2026-10-30T21:35:41.667Z",
+    "sourceDb": "local_persistent"
+  }
+]

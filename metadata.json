@@ -1,0 +1,6 @@
+{
+  "name": "SecureView Pro",
+  "description": "Tienda premium de cámaras de seguridad de alta resolución 4K. Incluye catálogo interactivo, simulador de visión nocturna y cotizaciones personalizadas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
